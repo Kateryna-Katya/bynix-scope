@@ -1,19 +1,53 @@
-<header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+<header class="header" id="header">
+  <div class="container header__container">
+    <a href="#hero" class="header__logo logo">
+      bynix-scope
+    </a>
+
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#hero" class="nav__link">Главная</a></li>
+        <li class="nav__item"><a href="#upgrade" class="nav__link">Апгрейд</a></li>
+        <li class="nav__item"><a href="#benefits" class="nav__link">Преимущества</a></li>
+        <li class="nav__item"><a href="#innovations" class="nav__link">Инновации</a></li>
+        <li class="nav__item"><a href="#blog" class="nav__link">Блог</a></li>
       </ul>
     </nav>
+
+    <a href="#contact" class="header__cta button button--primary">
+      Связаться
+    </a>
+
+    <button class="header__toggle" aria-label="Открыть меню">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <line x1="4" y1="12" x2="20" y2="12"></line>
+        <line x1="4" y1="6" x2="20" y2="6"></line>
+        <line x1="4" y1="18" x2="20" y2="18"></line>
+      </svg>
+    </button>
   </div>
 </header>
+<div class="mobile-menu-overlay" id="mobileOverlay"></div>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="header__toggle mobile-menu__close" aria-label="Закрыть меню">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <line x1="18" y1="6" x2="6" y2="18"></line>
+      <line x1="6" y1="6" x2="18" y2="18"></line>
+    </svg>
+  </button>
+
+  <ul class="mobile-menu__list">
+    <li class="mobile-menu__item"><a href="#hero" class="mobile-menu__link">Главная</a></li>
+    <li class="mobile-menu__item"><a href="#upgrade" class="mobile-menu__link">Апгрейд</a></li>
+    <li class="mobile-menu__item"><a href="#benefits" class="mobile-menu__link">Преимущества</a></li>
+    <li class="mobile-menu__item"><a href="#innovations" class="mobile-menu__link">Инновации</a></li>
+    <li class="mobile-menu__item"><a href="#blog" class="mobile-menu__link">Блог</a></li>
+  </ul>
+
+  <a href="#contact" class="mobile-menu__cta button button--primary">
+    Бесплатная консультация
+  </a>
+</div>
