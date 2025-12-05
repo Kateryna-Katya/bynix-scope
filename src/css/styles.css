@@ -991,3 +991,86 @@ p {
     padding: 0.5rem 1rem;
     min-width: unset;
 }
+/* --------------------------------------------------------------------------
+   14. Legal Pages (privacy, cookies, terms, etc.)
+   -------------------------------------------------------------------------- */
+.pages {
+    padding: var(--space-xl) 0;
+    background-color: var(--color-background);
+    min-height: 100vh;
+}
+
+.pages__container {
+    background-color: var(--color-white);
+    padding: var(--space-lg);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.pages__back-link {
+    display: inline-block;
+    font-weight: 500;
+    color: var(--color-primary);
+    margin-bottom: var(--space-md);
+    transition: color 0.3s ease;
+}
+
+.pages__back-link:hover {
+    color: var(--color-primary-dark);
+}
+
+.pages__title {
+    font-size: 2rem;
+    font-family: var(--font-heading);
+    color: var(--color-secondary);
+    border-bottom: 2px solid var(--color-primary-light);
+    padding-bottom: var(--space-sm);
+    margin-bottom: var(--space-lg);
+}
+
+.pages__heading {
+    font-size: 1.5rem;
+    color: var(--color-primary-dark);
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-sm);
+    font-family: var(--font-heading);
+}
+
+.pages__list {
+    padding-left: var(--space-lg);
+    margin-bottom: var(--space-md);
+    /* Заменяем стандартные маркеры на стилизованные */
+    list-style: none;
+}
+
+.pages__list li {
+    position: relative;
+    margin-bottom: var(--space-sm);
+    padding-left: var(--space-md);
+}
+
+/* Стиль для маркера списка */
+.pages__list li::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.pages__container p {
+    font-size: 1rem;
+    color: var(--color-text);
+}
+
+.pages__container a {
+    color: var(--color-secondary);
+    text-decoration: underline;
+}
+
+.pages__container a:hover {
+    color: var(--color-secondary-light);
+}
